@@ -9,30 +9,25 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 
-###  `GET http://localhost:4000/api/v1/users`
+###  APIS and available methods
 
-###  `GET http://localhost:4000/api/v1/users/1`
-
-## Users
-###  `POST http://localhost:4000/api/v1/users`
+### `users`
 ```plain
-{
-    "name": "name",
-    "email": "example@gmail.com",
-    "password": "example",
-    "rol": "client"
-}
+GET    | http://localhost:4000/api/v1/users
+GET    | http://localhost:4000/api/v1/users/1
+POST   | http://localhost:4000/api/v1/users   => {name, email, password, rol}
+PATCH  | http://localhost:4000/api/v1/users/1 => {name, email}
+DELETE | http://localhost:4000/api/v1/users
 ```
 
-###  `PATCH http://localhost:4000/api/v1/users`
+### `repairs`
 ```plain
-{
-    "name": "other name",
-    "email": "otherexample@gmail.com",
-}
+GET    | http://localhost:4000/api/v1/repairs
+GET    | http://localhost:4000/api/v1/repairs/1
+POST   | http://localhost:4000/api/v1/repairs   => {date, userId}
+PATCH  | http://localhost:4000/api/v1/repairs/1 => {name, email}
+DELETE | http://localhost:4000/api/v1/repairs
 ```
-###  `DELETE http://localhost:4000/api/v1/users/1`
-
 
 
 
