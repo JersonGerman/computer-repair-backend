@@ -14,8 +14,21 @@ Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
 ### GET `http://localhost:4000/api/v1/users/1`
 
 ### POST `http://localhost:4000/api/v1/users`
+```plain
+{
+    "name": "name",
+    "email": "example@gmail.com",
+    "password": "example",
+    "rol": "client"
+}
+```
 
 ### PATCH `http://localhost:4000/api/v1/users`
+```plain
+{
+    "name": "other name",
+    "email": "otherexample@gmail.com",
+}
 
 ### DELETE `http://localhost:4000/api/v1/users/1`
 
