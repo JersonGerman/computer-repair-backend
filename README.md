@@ -29,7 +29,7 @@ Open [http://localhost:4000](http://localhost:4000) to view it in your browser.
     "name": "other name",
     "email": "otherexample@gmail.com",
 }
-
+```
 ### DELETE `http://localhost:4000/api/v1/users/1`
 
 
