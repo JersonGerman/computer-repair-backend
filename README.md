@@ -14,19 +14,19 @@ Open [http://localhost:4000](http://localhost:4000) to test the services deploye
 ### `users`
 ```plain
 GET    | http://localhost:4000/api/v1/users
-GET    | http://localhost:4000/api/v1/users/1
+GET    | http://localhost:4000/api/v1/users/[id]
 POST   | http://localhost:4000/api/v1/users   => {name, email, password, rol}
-PATCH  | http://localhost:4000/api/v1/users/1 => {name, email}
-DELETE | http://localhost:4000/api/v1/users
+PATCH  | http://localhost:4000/api/v1/users/[id] => {name, email}
+DELETE | http://localhost:4000/api/v1/users/[id]
 ```
 
 ### `repairs`
 ```plain
 GET    | http://localhost:4000/api/v1/repairs
-GET    | http://localhost:4000/api/v1/repairs/1
+GET    | http://localhost:4000/api/v1/repairs/[id]
 POST   | http://localhost:4000/api/v1/repairs   => {date, userId}
-PATCH  | http://localhost:4000/api/v1/repairs/1 => {name, email}
-DELETE | http://localhost:4000/api/v1/repairs
+PATCH  | http://localhost:4000/api/v1/repairs/[id] => {name, email}
+DELETE | http://localhost:4000/api/v1/repairs/[id]
 ```
 
 
